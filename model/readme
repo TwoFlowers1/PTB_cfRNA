@@ -1,0 +1,26 @@
+model_build.sh  ## main shell
+
+/Bin/
+FeatureSelection.py  ## feature selection
+DL.py    ## deep-learning model 
+GBM_GLM_RF_SVM.R  ## GBM, GLM, RF and SVM model 
+pheat.R  ## for plot heatmap. It is a dependent file of GBM_GLM_RF_SVM.R and xgboost.R
+train2pred.R  ## for plot AUC. It is a dependent file of GBM_GLM_RF_SVM.R 
+train2pred_xgboost.R  ## for plot AUC. It is a dependent file of xgboost.R
+xgboost.R  ## xgboost model
+lightGBM.py  ## lightGBM model
+younden_AUC_PRC.R  ## for plot AUPRC,AUROC; calculated confusion matrix using younden index
+
+/data/
+feature.gene.list  ## feature gene list
+gene.list  ## Gene sets with count >= 5 in at least 30% of samples in the discovery cohort
+mRNATotal07_group_train.csv ## training set with group
+sam.group.sPTB.train  ## group of training set
+sam.group.sPTB.intervalid  ## group of internal validation set
+sam.group.sPTB.valid1 ## group of validation set 1
+sam.group.sPTB.valid2  ## group of validation set 2
+sam_path_group.list.773.mlmiRNA.TPM.07  ## expression profile of all samples; all of genes have count >= 5 in at least 30% of samples in the discovery cohort
+
+dependence:
+R: ggplot2, pROC, ROCR, ggsci, caret, dplyr, glmnet, randomForest, gbm, kernlab, pheatmap, xgboost, PRROC
+python: pandas, statsmodels, sklearn, numpy, tensorflow, joblib, os, sys
