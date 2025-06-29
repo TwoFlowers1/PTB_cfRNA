@@ -19,6 +19,8 @@ sam.group.sPTB.train  ## group of training set
 sam.group.sPTB.intervalid  ## group of internal validation set
 sam.group.sPTB.valid1 ## group of validation set 1
 sam.group.sPTB.valid2  ## group of validation set 2
+
+#### This file is larger than 25M and cannot be uploaded for the time being
 sam_path_group.list.773.mlmiRNA.TPM.07  ## expression profile of all samples; all of genes have count >= 5 in at least 30% of samples in the discovery cohort
 
 dependence:
