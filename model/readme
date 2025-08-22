@@ -1,7 +1,6 @@
 model_build.sh  ## main shell
 
 /Bin/
-FeatureSelection.py  ## feature selection
 DL.py    ## deep-learning model 
 GBM_GLM_RF_SVM.R  ## GBM, GLM, RF and SVM model 
 pheat.R  ## for plot heatmap. It is a dependent file of GBM_GLM_RF_SVM.R and xgboost.R
